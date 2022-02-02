@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -28,6 +29,7 @@ public class DemoQaFormTest extends TestBase {
 
 
     @Test
+    @Tag("properties")
     void fillFormTest() {
 
         // Open URL
