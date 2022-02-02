@@ -7,8 +7,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import static com.codeborne.selenide.Configuration.browser;
-
 public class TestBase {
 
     @BeforeAll
@@ -27,7 +25,7 @@ public class TestBase {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "2560x1440";
         Configuration.remote = remoteUrl;
-//        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+//      Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
@@ -38,12 +36,6 @@ public class TestBase {
         //Attach.attachAsText("Version: ", version);
         // Attach.attachAsText("Remote Url: ", remoteUrl);
     }
-
-
-
-
-
-
 
     @AfterEach
     void addAttachments() {
