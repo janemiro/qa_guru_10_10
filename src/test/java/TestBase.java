@@ -33,16 +33,17 @@ public class TestBase {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
-    }
 
-
-
-
-
-       // Attach.attachAsText("Browser: ", browser);
+        // Attach.attachAsText("Browser: ", browser);
         //Attach.attachAsText("Version: ", version);
-       // Attach.attachAsText("Remote Url: ", remoteUrl);
+        // Attach.attachAsText("Remote Url: ", remoteUrl);
     }
+
+
+
+
+
+
 
     @AfterEach
     void addAttachments() {
